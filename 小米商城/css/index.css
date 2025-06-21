@@ -146,6 +146,9 @@ li>a:hover{
 /* 头部样式结束 */
 
 /* 内容样式开始 */
+.container {
+    padding-bottom: 26px;
+}
 .main-content-banner{
     position: relative;
     width: 100%;
@@ -299,4 +302,112 @@ li>a:hover{
 /* 使用伪元素去从第二个兄弟元素以后都加一个左外边距 */
 .promo-img:nth-child(n+2){
     margin-left: 15px;
+}
+/* 内容样式结束 */
+
+/* 主体样式开始 */
+.main-img img{
+    width: 100%;
+    margin: 22px 0;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    height: 58px;
+}
+
+.title >h3{
+    font-weight: 200;
+}
+
+.title a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.icon-xiaojiantou{
+    font-size: 20px;
+    background-color: #b0b0b0;
+    border-radius: 50%;
+    margin-left: 8px;
+    color: #fff;
+    right: 0;
+}
+
+.phone-special{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side{
+    width: 234px;
+    /* 禁止缩小图片 */
+    flex-shrink: 0; 
+}
+
+.left-side>img{
+    width: 100%;
+}
+
+.phone-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许右侧填充剩余空间 */
+    flex-grow: 1
+}
+
+.phone-item{
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.phone-img{
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.phone-item a{
+    display: inline-block;
+    width: 100%;
+   
+}
+
+.phone-img>img{
+    width: 100%;
+
+}
+
+.info h3{
+    height: 21px;
+    font-size: 14px;
+    margin:0 10px 2px;
+    font-weight: 400;
+}
+
+.desc{
+    height: 18px;
+    font-size: 12px;
+    margin: 0 10px 10px;
+    color: #b0b0b0;
+}
+
+.price{
+    font-size: 14px;
+    color: #ff6700;
+    margin: 0 10px 14px;
+}
+
+.num{
+    text-decoration: line-through;
+  color: #999; /* 可选：灰色文字表示已删除 */
 }
